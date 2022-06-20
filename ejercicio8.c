@@ -22,15 +22,23 @@ int main(void)
     {
         printf("Digite la calificación del alumno: ");
         scanf("%f", &nota);
-
-        if (nota > 4)
+        
+        if(nota<0)
         {
-            promedio+=nota;
-            contador_a++;
-        } 
-        printf("Si desea continuar digite S: ");
-        scanf(" %c", &decision);
-        contador++;
+            printf("La nota mínima aceptada es 0, por favor reingrese la calificación: ");
+            scanf("%f", &nota);
+        }
+        else
+        {
+            if (nota > 4)
+            {   
+                promedio+=nota;
+              contador_a++;
+            } 
+            printf("Si desea continuar digite S: ");
+            scanf(" %c", &decision);
+            contador++;
+        }
     }
     if (promedio>0)
     {

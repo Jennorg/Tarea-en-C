@@ -15,7 +15,9 @@ if (n>=0) {
  neg+=n;
 }
   }
+  if(pos!=0){
   pos/=j;
+  }
   printf("\nEl promedio de los positivos es: %d",pos);
   printf("\nLa sumatoria de los negativos es: %d",neg);
   return 0;

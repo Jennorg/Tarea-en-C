@@ -6,6 +6,7 @@ forma exacta (con resto 0).*/
 int main (){
   int n=0,div=0;
   printf("\nEscriba un numero: "); scanf("%d",&n);
+  n=abs(n);
   div=n;
   for (int i=n;i>0;i--) {
 if (n%div==0) {

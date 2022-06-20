@@ -2,10 +2,11 @@
 y el 100.*/
 #include <stdio.h>
 int main () {
-  int num=0;
+  int num=0, add=0;
   for (int i=100; i>0;i--) { 
-  num=num+1;
-  printf("\n%d",num);
+  add+=num;
+  num++;
   }
+  printf("\nLa suma de los números entre el 0 y el 100 es: %d", add);
   return 0;
 }
