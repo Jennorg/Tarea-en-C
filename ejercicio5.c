@@ -9,10 +9,12 @@ int main (){
   if (num<0) {
 printf("\nIntroduzca un numero entero positivo");
   }
+  else
+  {
   for (i=1;i<=num;i++) {
     burbuja*=i;  
   }
- 
+  }
   printf("\nEl factorial de %d",num); printf(" es: %d",burbuja);
   return 0;
 }
