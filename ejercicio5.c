@@ -14,7 +14,8 @@ printf("\nIntroduzca un numero entero positivo");
   for (i=1;i<=num;i++) {
     burbuja*=i;  
   }
-  }
+  
   printf("\nEl factorial de %d",num); printf(" es: %d",burbuja);
+  }
   return 0;
 }
